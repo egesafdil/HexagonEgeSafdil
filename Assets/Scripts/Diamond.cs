@@ -55,6 +55,7 @@ public class Diamond : MonoBehaviour
         gridMaker = FindObjectOfType<GridMaker>();
         gameCore = FindObjectOfType<GameCore>();
         myRigidbody = GetComponent<Rigidbody2D>();
+        myRigidbody.bodyType = RigidbodyType2D.Static;
 
         lastRow = (gridMaker.Rows * -2) + 2; //Calculates the last row
 
